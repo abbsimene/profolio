@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM sans', sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
+  height: 70px;
+  color: bisque;
+}
+ .Name {
+  size: 100px;
+ }
+
+.list {
+  display: flex;
+  position: relative;
+  gap: 50px;
+  margin-left: auto;
+  list-style: none;
+}
+
+.list:hover {
+  cursor: pointer;
+  box-shadow: inset;
+}
+
+.home {
+  background-image: url('assets/aura.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.home h1{
+  color: bisque;
+  font-size: 75px;
+}
+
+.About_me {
+  height: 400px;
+  display: flex;
+  text-align: right;
+  justify-content: right;
+  
+}
+
+.About_me h1 {
+  font-size: 50px;
+  color: bisque;
+  margin-left: 0 auto;
+}
+
+.About_me p {
+  color: bisque;
+}
+
+
+
+
+
+
+
+
