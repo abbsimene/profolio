@@ -8,14 +8,14 @@
 }
 
 body {
-  font-family: 'DM sans', sans-serif;
-  background-color: black;
+  font-family: 'DM Sans', sans-serif;
 }
 
 header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: black;
 }
 
 .navbar { 
@@ -27,7 +27,7 @@ header {
   color: bisque;
 }
  .moon {
-  size: 100px;
+  font-size: 25px;
  }
 
  .moon:hover {
@@ -63,9 +63,12 @@ header {
   background-position: center;
   padding: 150px;
   height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-
 }
 
 #home h1{
@@ -73,9 +76,10 @@ header {
   font-size: 75px;
 }
 
-
-
-
+#home p {
+  color: bisque;
+  font-size: 20px;
+}
 
 
 
