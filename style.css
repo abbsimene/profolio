@@ -12,6 +12,12 @@ body {
   background-color: black;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .navbar { 
   display: flex;
   flex-wrap: wrap;
@@ -48,23 +54,22 @@ body {
   background-color: transparent;
 }
 
-.home {
+#home {
   background-image: url('assets/aura.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 150px;
-  height: 400px;
+  height: 100vh;
   justify-content: center;
   text-align: center;
 
 }
 
-.home h1{
+#home h1{
   color: bisque;
   font-size: 75px;
 }
-
 
 
 
