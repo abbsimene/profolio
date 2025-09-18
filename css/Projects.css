@@ -3,16 +3,44 @@
   text-align: left;
   padding: 100px;
   height: 100vh;
+  background-color: #0D1117;
+}
+
+#about h1{
+  padding-top: 75px;
+  font-size: 70px; 
+  margin-bottom: 30px;
+  color: #f9fafb;
 }
 
 
+#about p{
+  font-size: 20px;
+  color: #d1d5db;
+}
 
+.button_resume {
+  text-align: center;
+}
 
+#about button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  height: 25px;
+  padding: 14px 30px;
+  margin-top: 75px;
+}
 
-
-
-
-
+#about button:hover{
+  cursor: pointer;
+}
 
 
 
