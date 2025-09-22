@@ -1,3 +1,23 @@
-#Projects {
+#projects {
   height: 100vh;
+  background-color: #0D1117;
+}
+
+#projects h1 {
+  text-align: center;
+  color: #d1d5db;
+  font-size: 70px;
+}
+
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.project img{
+  height: 200px;
+  width: 200px;
 }

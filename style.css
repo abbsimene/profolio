@@ -61,7 +61,7 @@ header {
 }
 
 #home {
-  background-image: url('assets/aura.jpg');
+  background-color: #0D1117;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
