@@ -11,13 +11,56 @@
 
 .project{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
   margin-top: 70px;
 }
 
-.project img{
+.project_card {
+  background-color: #1E293B;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.project_card img{
   height: 200px;
   width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project_card h3 {
+  color: #f9fafb;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.project_card p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.project_card a {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #238636;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+
+}
+
+.project_card a:hover {
+  background-color: #2ea043;
 }
