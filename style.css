@@ -86,5 +86,120 @@ header {
 }
 
 
+.menu-btn {
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
 
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+
+/* Tablets and smaller (max 1024px) */
+@media (max-width: 1024px) {
+  #home h1 {
+    font-size: 55px;
+  }
+
+  #projects h1,
+  #about h1 {
+    font-size: 50px;
+  }
+
+  .project {
+    gap: 30px;
+  }
+
+  .project_card {
+    width: 240px;
+  }
+}
+
+/* Phones (max 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Show the menu button */
+  .menu-btn {
+    display: block;
+  }
+
+  /* Hide nav links by default */
+  .list {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0D1117;
+    position: absolute;
+    top: 65px;   /* just below navbar */
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Show links when active */
+  .list.active {
+    display: flex;
+  }
+
+  #home h1 {
+    font-size: 40px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+
+  #about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #about h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project_card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+
+/* Very small phones (max 480px) */
+@media (max-width: 480px) {
+  #home h1 {
+    font-size: 28px;
+  }
+
+  #projects h1,
+  #about h1 {
+    font-size: 30px;
+  }
+
+  .project_card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #about button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 

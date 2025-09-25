@@ -11,16 +11,22 @@
 <body>
 
   <header>
-    <nav class="navbar">
-      <h2 class="moon">☾</h2>
-      <ul class="list">        
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <h2 class="moon">☾</h2>
+
+    <!-- Menu button (only shows on small screens) -->
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul class="list">        
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
 
@@ -100,6 +106,16 @@
        
     </section>
   </footer>  
-
 </body>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const navList = document.querySelector('.list');
+
+  menuBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+
+
 </html>
