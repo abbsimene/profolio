@@ -5,38 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <title>Profolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <title>Imene's Portfolio</title>
 </head>
 <body>
+  <!-- Loading Bar -->
+  <div class="loading-bar"></div>
 
   <header>
-  <nav class="navbar">
-    <h2 class="moon">☾</h2>
+    <nav class="navbar">
+      <h2 class="moon">☾</h2>
 
-    <!-- Menu button (only shows on small screens) -->
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
+      <!-- Menu button (only shows on small screens) -->
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
 
-    <ul class="list">        
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <ul class="list">        
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
-
     <section id="home">
-      <h1>Hello! I am Imene</h1>
-      <p>Scroll down for more ↓</p>
+      <div class="home-content">
+        <h1>Hello! I am Imene</h1>
+        <p>Scroll down for more ↓</p>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </div>
+      </div>
     </section>
     
     <section id="about">
-
       <h1>About me</h1>
       
       <p>Hi, I'm Imene, a third-year Computer Science student with a strong interest in web development and emerging technologies. I enjoy building projects that are both practical and creative, and I'm always looking for ways to improve my skills through real-world challenges</p>
@@ -51,37 +59,32 @@
     <section id="projects">
       <h1>Projects</h1>
       <div class="project">
-
         <div class="project_card">
-          <img src="assets/aiModel.png"/>
+          <img src="assets/aiModel.png" alt="AI Model Project"/>
           <h3>AI Model</h3>
           <p>A machine learning project where I built and trained an AI model.</p>
           <a href="https://github.com/abbsimene/ml-anemia-predictions">View Project</a>
-
         </div>
         
         <div class="project_card">
-          <img src="assets/projetC.png">
+          <img src="assets/projetC.png" alt="Number Slide Game">
           <h3>Number Slide Game</h3>
           <p>A C & SDL based game with leaderboard, timer, and player vs machine modes.</p>
           <a href="https://github.com/abbsimene/sdl-2k48-game">View Project</a>
         </div>
         
         <div class="project_card">
-          <img src="assets/suchi-website.png"/>
+          <img src="assets/suchi-website.png" alt="Sushi Restaurant Website"/>
           <h3>Sushi restaurant</h3>
-          <p>A basic html css website for a suchi restaurant</p>
+          <p>A basic html css website for a sushi restaurant</p>
           <a href="https://suchi-website-git-main-abbsimenes-projects.vercel.app/">View Project</a>
         </div>
-
       </div>
     </section>
   </main>
 
-
   <footer>
     <section id="contact">
-
       <h3>Contact me</h3>
 
       <div class="container">
@@ -97,25 +100,15 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
 
-         <a href="https://www.facebook.com/share/1AsAhDbAZd/">
+        <a href="https://www.facebook.com/share/1AsAhDbAZd/">
           <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
         
-        <p>Copyright ©2025 Imene All right reserved</p>
-       
+      <p>Copyright ©2025 Imene All right reserved</p>
     </section>
   </footer>  
+
+  <script src="animations.js"></script>
 </body>
-
-<script>
-  const menuBtn = document.querySelector('.menu-btn');
-  const navList = document.querySelector('.list');
-
-  menuBtn.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-</script>
-
-
 </html>
